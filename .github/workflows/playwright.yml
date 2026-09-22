@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        suite: [api-smoke, api-regression, ui-smoke, ui-regression]
+        suite: [api-smoke, api-module, api-regression, ui-smoke, ui-module, ui-regression]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
