@@ -1,0 +1,20 @@
+export const uiModules = [
+  '/', '/inputs', '/login', '/register', '/forgot-password', '/otp-login',
+  '/upload', '/download', '/add-remove-elements', '/secure-download',
+  '/notification-message', '/autocomplete', '/challenging-dom', '/large',
+  '/shadowdom', '/typos', '/my-ip', '/broken-images', '/infinite-scroll',
+  '/slow', '/js-dialogs', '/javascript-error', '/jqueryui', '/jqueryui/menu',
+  '/abtest?abtest_off=true', '/checkboxes', '/context-menu', '/key-presses',
+  '/disappearing-elements', '/dropdown', '/redirector', '/geolocation',
+  '/horizontal-slider', '/hovers', '/floating-menu', '/iframe', '/windows',
+  '/tables', '/tooltips', '/dynamic-content', '/dynamic-controls',
+  '/dynamic-loading', '/shifting-content', '/status-codes', '/dynamic-id',
+  '/entry-ad', '/exit-intent', '/contact', '/google-tracking-events',
+  '/user-profile', '/feedback', '/scrollbars', '/cookie-alert', '/headers',
+  '/console-logs', '/basic-auth', '/digest-auth', '/random-number', '/flaky',
+  '/about', '/notes/app', '/webpark', '/bmi', '/secure-password-checker',
+  '/calorie-tracker', '/color-wheel', '/bookstore', '/cars', '/locators',
+  '/assertions/should-be', '/assertions/should-have', '/assertions/should-equal',
+  '/assertions/should-match', '/assertions/should-contain',
+  '/assertions/should-include', '/assertions/should-exist'
+] as const;
