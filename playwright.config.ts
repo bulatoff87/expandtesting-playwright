@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 2 : undefined,
   timeout: 30_000,
   expect: { timeout: 8_000 },
-  reporter: [['list']],
+  reporter: process.env.CI ? [['list'], ['blob']] : [['list']],
   use: {
     baseURL: process.env.BASE_URL ?? 'https://practice.expandtesting.com',
     trace: 'retain-on-failure',

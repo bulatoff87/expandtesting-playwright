@@ -36,5 +36,8 @@ The commands write to separate artifact directories, so both Warp processes are 
 - `tests/ui/*regression.spec.ts`: behavioral coverage for forms and browser interactions.
 - `.github/workflows/playwright.yml`: six independent CI jobs through a matrix.
 
+After all six jobs pass on `main`, CD merges their Playwright blob reports and
+publishes one HTML report to GitHub Pages.
+
 The public practice site changes often. A non-breaking route smoke test accepts 2xx/3xx/4xx
 responses but fails server errors; behavioral tests assert the stable user-visible contract.
