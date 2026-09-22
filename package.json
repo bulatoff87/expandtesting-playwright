@@ -10,9 +10,13 @@
     "test:api": "playwright test tests/api --output test-results/api",
     "test:api:smoke": "playwright test tests/api --grep @smoke --output test-results/api-smoke",
     "test:api:regression": "playwright test tests/api --grep @regression --output test-results/api-regression",
+    "test:api-smoke": "npm run test:api:smoke",
+    "test:api-regression": "npm run test:api:regression",
     "test:ui": "playwright test tests/ui --output test-results/ui",
     "test:ui:smoke": "playwright test tests/ui --grep @smoke --output test-results/ui-smoke",
     "test:ui:regression": "playwright test tests/ui --grep @regression --output test-results/ui-regression",
+    "test:ui-smoke": "npm run test:ui:smoke",
+    "test:ui-regression": "npm run test:ui:regression",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
